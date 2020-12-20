@@ -28,12 +28,12 @@ for i in range(500):
             if len(link.get('href')) > 80:
                 links.append({'Links': link.get('href')})
 
-    # prints the status
+    # print the status
     print(f'Page: {i+1} of 500')
 
-# converts the list into a Pandas dataframe
+# convert the list into a Pandas dataframe
 links = pd.DataFrame(links)
-# drops all duplicate links
+# drop all duplicate links
 links.drop_duplicates(subset='Links', inplace=True)
 # save it to a csv file
 links.to_csv('0-links.csv', index=False)
