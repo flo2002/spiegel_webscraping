@@ -9,7 +9,7 @@ import pandas as pd
 # read the csv file from the "0-get_link.py" script into a Pandas dataframe
 links = pd.read_csv('0-links.csv')
 
-# initializes these lists
+# initialize these lists
 full_data = []
 backup_data = []
 
